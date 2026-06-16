@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { content } from '../data/content';
-import headshotImg from '@assets/IMG_8055_1775969981135.jpeg';
+import headshotImg from '../assets/headshot.jpg';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FileText, Download, Mail, ChevronRight, Menu, X, 
   CheckCircle2, Building, GraduationCap, ChevronDown, 
-  ExternalLink, Linkedin, Quote
+  ExternalLink, Quote
 } from 'lucide-react';
+import { FaLinkedin } from 'react-icons/fa';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import { Card, CardContent } from '../components/ui/card';
@@ -407,7 +408,7 @@ export default function Home() {
                 <a href="#linkedin" className="flex items-center justify-between p-6 bg-background rounded-lg border border-border shadow-sm hover:border-primary transition-colors group">
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-[#0A66C2]/10 flex items-center justify-center text-[#0A66C2]">
-                      <Linkedin className="h-5 w-5" />
+                      <FaLinkedin className="h-5 w-5" />
                     </div>
                     <div>
                       <h4 className="font-medium text-foreground">LinkedIn Profile</h4>
@@ -478,7 +479,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center">
-                    <Linkedin className="h-5 w-5 text-accent" />
+                    <FaLinkedin className="h-5 w-5 text-accent" />
                   </div>
                   <div>
                     <p className="text-sm text-primary-foreground/60 uppercase tracking-wider">LinkedIn</p>
@@ -530,7 +531,7 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-6 mb-4 md:mb-0">
             <a href="#linkedin" className="text-muted-foreground hover:text-primary transition-colors">
-              <Linkedin className="h-5 w-5" />
+              <FaLinkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </a>
             <a href="#email" className="text-muted-foreground hover:text-primary transition-colors">
