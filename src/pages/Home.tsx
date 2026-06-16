@@ -171,7 +171,13 @@ export default function Home() {
             </div>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               {content.about.paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
+                i === 0 ? (
+                  <p key={i}>{p}</p>
+                ) : (
+                  <motion.p key={i} {...reveal(i - 1)}>
+                    {p}
+                  </motion.p>
+                )
               ))}
             </div>
           </div>
