@@ -151,3 +151,80 @@
     @apply font-serif;
   }
 }
+
+@layer components {
+  .section-atmosphere {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  .section-atmosphere::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: var(--atmosphere-opacity, 0.44);
+    background-image: var(--atmosphere-pattern);
+    background-size: var(--atmosphere-size, auto);
+    background-position: var(--atmosphere-position, center);
+  }
+
+  .section-atmosphere > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .atmosphere-hero {
+    --atmosphere-opacity: 0.34;
+    --atmosphere-size: 72px 72px, 72px 72px, 100% 100%;
+    --atmosphere-pattern:
+      linear-gradient(rgba(39, 52, 71, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(39, 52, 71, 0.035) 1px, transparent 1px),
+      linear-gradient(135deg, rgba(179, 157, 94, 0.12), transparent 42%);
+  }
+
+  .atmosphere-primary {
+    --atmosphere-opacity: 0.5;
+    --atmosphere-size: 28px 28px;
+    --atmosphere-pattern:
+      linear-gradient(135deg, rgba(252, 251, 248, 0.08) 0 1px, transparent 1px 28px);
+  }
+
+  .atmosphere-paper,
+  .atmosphere-lines,
+  .atmosphere-testimonials {
+    --atmosphere-opacity: 0.32;
+    --atmosphere-size: 18px 18px;
+    --atmosphere-pattern:
+      linear-gradient(135deg, rgba(39, 52, 71, 0.035) 0 1px, transparent 1px 18px);
+  }
+
+  .atmosphere-field,
+  .atmosphere-samples,
+  .atmosphere-credentials {
+    --atmosphere-opacity: 0.36;
+    --atmosphere-size: 64px 64px, 100% 100%;
+    --atmosphere-pattern:
+      linear-gradient(rgba(39, 52, 71, 0.04) 1px, transparent 1px),
+      linear-gradient(110deg, transparent 0 35%, rgba(179, 157, 94, 0.08) 35% 36%, transparent 36% 100%);
+  }
+
+  .atmosphere-card,
+  .atmosphere-capabilities {
+    --atmosphere-opacity: 0.4;
+    --atmosphere-size: 42px 42px;
+    --atmosphere-pattern:
+      linear-gradient(90deg, rgba(39, 52, 71, 0.035) 1px, transparent 1px),
+      linear-gradient(rgba(179, 157, 94, 0.045) 1px, transparent 1px);
+  }
+
+  .atmosphere-contact {
+    --atmosphere-opacity: 0.38;
+    --atmosphere-size: 34px 34px, 100% 100%;
+    --atmosphere-pattern:
+      linear-gradient(135deg, rgba(252, 251, 248, 0.08) 0 1px, transparent 1px 34px),
+      linear-gradient(90deg, transparent, rgba(252, 251, 248, 0.08), transparent);
+  }
+}
