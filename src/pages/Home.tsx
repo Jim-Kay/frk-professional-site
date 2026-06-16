@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { content } from '../data/content';
-import headshotImg from '../assets/headshot.jpg';
+import headshotImg from '../assets/francine-pro.jpg';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FileText, Download, Mail, ChevronRight, Menu, X, 
