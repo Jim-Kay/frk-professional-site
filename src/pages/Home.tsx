@@ -56,6 +56,7 @@ export default function Home() {
             <a href="#about" className="hover:text-primary transition-colors">About</a>
             <a href="#expertise" className="hover:text-primary transition-colors">Expertise</a>
             <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
+            <a href="#patents" className="hover:text-primary transition-colors">Patents</a>
             <a href="#portfolio" className="hover:text-primary transition-colors">Portfolio</a>
             <a href="#contact" className="text-primary hover:text-primary/80 transition-colors">Contact</a>
           </div>
@@ -78,6 +79,7 @@ export default function Home() {
                 <a href="#about" onClick={closeMenu} className="text-muted-foreground hover:text-primary transition-colors">About</a>
                 <a href="#expertise" onClick={closeMenu} className="text-muted-foreground hover:text-primary transition-colors">Expertise</a>
                 <a href="#experience" onClick={closeMenu} className="text-muted-foreground hover:text-primary transition-colors">Experience</a>
+                <a href="#patents" onClick={closeMenu} className="text-muted-foreground hover:text-primary transition-colors">Patents</a>
                 <a href="#portfolio" onClick={closeMenu} className="text-muted-foreground hover:text-primary transition-colors">Portfolio</a>
                 <a href="#contact" onClick={closeMenu} className="text-primary font-medium">Contact</a>
               </div>
@@ -311,6 +313,50 @@ export default function Home() {
                   </CardContent>
                 </Card>
               </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Patents */}
+        <section id="patents" className="section-atmosphere atmosphere-lines py-24 px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-12 text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl font-serif text-primary mb-4">Patents & Inventions</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Patented work reflecting early formulation science experience in controlled-release drug delivery, women&apos;s health, and pharmaceutical composition development.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {content.patents.map((patent, idx) => (
+                <motion.div key={`${patent.number}-${idx}`} {...reveal(idx)} className="h-full">
+                  <Card className="h-full bg-background border-border shadow-sm hover:border-primary/30 hover:shadow-md transition-all">
+                    <CardContent className="p-6 flex flex-col h-full">
+                      <Badge variant="secondary" className="w-fit mb-4 bg-secondary/60">
+                        {patent.number}
+                      </Badge>
+                      <h3 className="font-serif text-lg text-primary leading-snug mb-3">
+                        {patent.title}
+                      </h3>
+                      <p className="text-xs font-medium uppercase tracking-wide text-accent mb-4">
+                        {patent.issued}
+                      </p>
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                        {patent.summary}
+                      </p>
+                      <a
+                        href={patent.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/75 transition-colors"
+                      >
+                        View patent
+                        <ExternalLink className="h-3.5 w-3.5" />
+                      </a>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>

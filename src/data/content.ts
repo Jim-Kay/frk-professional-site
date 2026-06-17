@@ -113,6 +113,50 @@ export const content = {
       description: "Experience supporting programs related to contraception, endometriosis, PMDD, and incontinence."
     }
   },
+  patents: [
+    {
+      title: "Device and Method for Treating Urinary Incontinence in Females",
+      number: "EU 2106785",
+      issued: "Issued Sep 1, 2009",
+      summary: "Controlled-release intravaginal oxybutynin delivery device for local treatment of urinary incontinence.",
+      url: "https://patents.google.com/patent/EP2106785A1/en"
+    },
+    {
+      title: "Method of Systemically Delivering SSRIs",
+      number: "US 7,005,138",
+      issued: "Issued Feb 1, 2006",
+      summary: "Methods and compositions for intravaginal or rectal systemic delivery of selected serotonin reuptake inhibitors.",
+      url: "https://patents.google.com/patent/US7005138B2/en"
+    },
+    {
+      title: "Device and Method for Treating Urinary Incontinence in Females",
+      number: "US 6,436,428",
+      issued: "Issued Aug 1, 2002",
+      summary: "Vaginal ring device for controlled local delivery of oxybutynin to treat female urinary incontinence.",
+      url: "https://patents.google.com/patent/US6436428B1/en"
+    },
+    {
+      title: "Oral Analgesic Compositions",
+      number: "US 6,344,480",
+      issued: "Issued Feb 1, 2002",
+      summary: "Oral analgesic compositions protected against microbiological degradation with a preservative system.",
+      url: "https://patents.google.com/patent/US6344480B1/en"
+    },
+    {
+      title: "Apparatus and Method for Anesthetizing the Cervical Region of a Female",
+      number: "US 6,264,973",
+      issued: "Issued Jul 1, 2001",
+      summary: "Apparatus for local anesthetic delivery to the cervical region using a biocompatible ring device.",
+      url: "https://patents.google.com/patent/US6264973B1/en"
+    },
+    {
+      title: "Device and Method for Treating Urinary Incontinence in Females",
+      number: "EP 1 278 494 B1 / WO 2001/070154",
+      issued: "Issued Mar 1, 2001",
+      summary: "International patent family covering local controlled-release oxybutynin delivery for urinary incontinence.",
+      url: "https://patents.google.com/patent/WO2001070154A1/en"
+    }
+  ],
   samples: [
     {
       title: "Phase II Oncology Imaging Charter",
