@@ -5,7 +5,7 @@ import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { 
   FileText, Download, Mail, ChevronRight, Menu, X, 
   CheckCircle2, Building, GraduationCap, ChevronDown, 
-  ExternalLink, Quote
+  ExternalLink, Globe, Quote
 } from 'lucide-react';
 import { FaLinkedin } from 'react-icons/fa';
 import { Button } from '../components/ui/button';
@@ -478,7 +478,13 @@ export default function Home() {
             <div>
               <h2 className="text-3xl font-serif text-primary mb-8">Professional Links</h2>
               <div className="space-y-4">
-                <motion.a {...reveal(0)} href="#linkedin" className="flex items-center justify-between p-6 bg-background rounded-lg border border-border shadow-sm hover:border-primary transition-colors group">
+                <motion.a
+                  {...reveal(0)}
+                  href={content.links.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-between p-6 bg-background rounded-lg border border-border shadow-sm hover:border-primary transition-colors group"
+                >
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-[#0A66C2]/10 flex items-center justify-center text-[#0A66C2]">
                       <FaLinkedin className="h-5 w-5" />
@@ -490,7 +496,25 @@ export default function Home() {
                   </div>
                   <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
                 </motion.a>
-                <motion.a {...reveal(1)} href="#resume" className="flex items-center justify-between p-6 bg-background rounded-lg border border-border shadow-sm hover:border-primary transition-colors group">
+                <motion.a
+                  {...reveal(1)}
+                  href={content.links.website}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-between p-6 bg-background rounded-lg border border-border shadow-sm hover:border-primary transition-colors group"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-accent/15 flex items-center justify-center text-primary">
+                      <Globe className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-foreground">Professional Website</h4>
+                      <p className="text-sm text-muted-foreground">francinerochekay.com</p>
+                    </div>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                </motion.a>
+                <motion.a {...reveal(2)} href="#resume" className="flex items-center justify-between p-6 bg-background rounded-lg border border-border shadow-sm hover:border-primary transition-colors group">
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                       <Download className="h-5 w-5" />
@@ -558,7 +582,20 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-sm text-primary-foreground/60 uppercase tracking-wider">LinkedIn</p>
-                    <p className="font-medium text-lg">/in/placeholder</p>
+                    <a href={content.links.linkedin} target="_blank" rel="noreferrer" className="font-medium text-lg hover:text-accent transition-colors">
+                      /in/francine-kay
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center">
+                    <Globe className="h-5 w-5 text-accent" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-primary-foreground/60 uppercase tracking-wider">Website</p>
+                    <a href={content.links.website} target="_blank" rel="noreferrer" className="font-medium text-lg hover:text-accent transition-colors">
+                      francinerochekay.com
+                    </a>
                   </div>
                 </div>
               </div>
@@ -607,13 +644,13 @@ export default function Home() {
             {content.hero.initials}
           </div>
           <div className="flex items-center gap-6 mb-4 md:mb-0">
-            <a href="#linkedin" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href={content.links.linkedin} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
               <FaLinkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </a>
-            <a href="#email" className="text-muted-foreground hover:text-primary transition-colors">
-              <Mail className="h-5 w-5" />
-              <span className="sr-only">Email</span>
+            <a href={content.links.website} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Globe className="h-5 w-5" />
+              <span className="sr-only">Professional website</span>
             </a>
           </div>
           <div className="text-sm text-muted-foreground">

@@ -10,6 +10,10 @@ export const content = {
       { label: "Contact", href: "#contact" }
     ]
   },
+  links: {
+    linkedin: "https://www.linkedin.com/in/francine-kay/",
+    website: "https://www.francinerochekay.com/"
+  },
   whatIBring: {
     title: "A rare combination of scientific, writing, and leadership experience",
     points: [
