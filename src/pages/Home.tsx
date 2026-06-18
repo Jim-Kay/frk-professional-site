@@ -5,7 +5,7 @@ import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { 
   FileText, Download, Mail, ChevronRight, Menu, X, 
   CheckCircle2, Building, GraduationCap, ChevronDown, 
-  ExternalLink, Globe, Quote
+  ExternalLink, Globe
 } from 'lucide-react';
 import { FaLinkedin } from 'react-icons/fa';
 import { Button } from '../components/ui/button';
@@ -42,6 +42,26 @@ export default function Home() {
     : content.samples.filter(s => s.category === activeTab);
 
   const closeMenu = () => setIsMobileMenuOpen(false);
+
+  const handleContactSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const form = new FormData(event.currentTarget);
+    const name = String(form.get("name") || "");
+    const email = String(form.get("email") || "");
+    const organization = String(form.get("organization") || "");
+    const subject = String(form.get("subject") || "Professional inquiry");
+    const message = String(form.get("message") || "");
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Organization: ${organization}`,
+      "",
+      message,
+    ].join("\n");
+
+    window.location.href = `mailto:${content.links.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-accent/30 selection:text-foreground">
@@ -133,7 +153,7 @@ export default function Home() {
                 <a href={content.hero.ctas[0].href}><FileText className="mr-2 h-4 w-4" /> {content.hero.ctas[0].label}</a>
               </Button>
               <Button size="lg" variant="outline" className="w-full sm:w-auto text-base h-12 px-8" asChild>
-                <a href={content.hero.ctas[1].href}><Download className="mr-2 h-4 w-4" /> {content.hero.ctas[1].label}</a>
+                <a href={content.hero.ctas[1].href} download><Download className="mr-2 h-4 w-4" /> {content.hero.ctas[1].label}</a>
               </Button>
               <Button size="lg" variant="secondary" className="w-full sm:w-auto text-base h-12 px-8" asChild>
                 <a href={content.hero.ctas[2].href}><Mail className="mr-2 h-4 w-4" /> {content.hero.ctas[2].label}</a>
@@ -463,7 +483,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-3">Certifications & Affiliations</h4>
+                  <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-3">Professional Affiliations</h4>
                   <ul className="space-y-3">
                     {content.credentials.certifications.map((cert, idx) => (
                       <li key={idx} className="flex items-center gap-3 text-foreground bg-background p-4 rounded-lg border border-border shadow-sm">
@@ -514,7 +534,7 @@ export default function Home() {
                   </div>
                   <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
                 </motion.a>
-                <motion.a {...reveal(2)} href="#resume" className="flex items-center justify-between p-6 bg-background rounded-lg border border-border shadow-sm hover:border-primary transition-colors group">
+                <motion.a {...reveal(2)} href={content.hero.ctas[1].href} download className="flex items-center justify-between p-6 bg-background rounded-lg border border-border shadow-sm hover:border-primary transition-colors group">
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                       <Download className="h-5 w-5" />
@@ -531,28 +551,46 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="section-atmosphere atmosphere-testimonials py-24 px-6 border-y border-border">
+        {/* Publications & Presentations */}
+        <section className="section-atmosphere atmosphere-scholarship py-24 px-6 border-y border-border">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-serif text-primary mb-12 text-center">Colleague Insights</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {content.testimonials.map((test, idx) => (
-                <motion.div key={idx} {...reveal(idx)} className="h-full">
-                  <Card className="h-full bg-card border-none shadow-md relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-secondary/50 rounded-bl-full -z-10"></div>
-                    <CardContent className="p-8 pt-10">
-                      <Quote className="h-8 w-8 text-accent/40 absolute top-6 right-6" />
-                      <p className="text-foreground/80 italic mb-8 leading-relaxed relative z-10 text-sm">
-                        "{test.quote}"
-                      </p>
-                      <div className="border-t border-border pt-4 mt-auto">
-                        <p className="font-serif text-primary font-medium">{test.author}</p>
-                        <p className="text-xs text-muted-foreground uppercase tracking-wide mt-1">{test.company}</p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
+            <div className="mb-12 text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl font-serif text-primary mb-4">Publications & Presentations</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Selected scholarly publications and scientific presentations from Francine&apos;s pharmaceutical research and writing background.
+              </p>
+            </div>
+            <div className="grid lg:grid-cols-2 gap-8">
+              <motion.div {...reveal(0)} className="h-full">
+                <Card className="h-full bg-card border-none shadow-md">
+                  <CardContent className="p-8">
+                    <h3 className="font-serif text-2xl text-primary mb-6">Publications</h3>
+                    <ul className="space-y-4">
+                      {content.scholarship.publications.map((item, idx) => (
+                        <li key={idx} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
+                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0"></span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </motion.div>
+              <motion.div {...reveal(1)} className="h-full">
+                <Card className="h-full bg-card border-none shadow-md">
+                  <CardContent className="p-8">
+                    <h3 className="font-serif text-2xl text-primary mb-6">Selected Presentations</h3>
+                    <ul className="space-y-4">
+                      {content.scholarship.presentations.map((item, idx) => (
+                        <li key={idx} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
+                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0"></span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -573,7 +611,9 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-sm text-primary-foreground/60 uppercase tracking-wider">Email</p>
-                    <p className="font-medium text-lg">contact@placeholder.com</p>
+                    <a href={`mailto:${content.links.email}`} className="font-medium text-lg hover:text-accent transition-colors">
+                      {content.links.email}
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -605,26 +645,26 @@ export default function Home() {
               <Card className="bg-background text-foreground border-none shadow-xl">
               <CardContent className="p-8">
                 <h3 className="font-serif text-2xl text-primary mb-6">Send a Message</h3>
-                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                <form className="space-y-4" onSubmit={handleContactSubmit}>
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
-                    <Input id="name" placeholder="Jane Smith" className="bg-card" />
+                    <Input id="name" name="name" placeholder="Jane Smith" className="bg-card" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="jane@company.com" className="bg-card" />
+                    <Input id="email" name="email" type="email" placeholder="jane@company.com" className="bg-card" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="org">Organization</Label>
-                    <Input id="org" placeholder="Company or Institution" className="bg-card" />
+                    <Input id="org" name="organization" placeholder="Company or Institution" className="bg-card" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="subject">Subject</Label>
-                    <Input id="subject" placeholder="Inquiry regarding..." className="bg-card" />
+                    <Input id="subject" name="subject" placeholder="Inquiry regarding..." className="bg-card" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message">Message</Label>
-                    <Textarea id="message" placeholder="How can I help?" className="min-h-[120px] bg-card" />
+                    <Textarea id="message" name="message" placeholder="How can I help?" className="min-h-[120px] bg-card" />
                   </div>
                   <Button type="submit" className="w-full h-12 text-base mt-2">
                     Send Message
@@ -644,6 +684,10 @@ export default function Home() {
             {content.hero.initials}
           </div>
           <div className="flex items-center gap-6 mb-4 md:mb-0">
+            <a href={`mailto:${content.links.email}`} className="text-muted-foreground hover:text-primary transition-colors">
+              <Mail className="h-5 w-5" />
+              <span className="sr-only">Email</span>
+            </a>
             <a href={content.links.linkedin} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
               <FaLinkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>

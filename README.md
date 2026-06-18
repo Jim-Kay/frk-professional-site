@@ -99,6 +99,12 @@ Static public assets live in:
 public/
 ```
 
+The downloadable resume PDF is served from:
+
+```text
+public/resume/francine-kay-resume.pdf
+```
+
 Source-controlled component assets live in:
 
 ```text

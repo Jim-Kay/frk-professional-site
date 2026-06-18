@@ -3,118 +3,133 @@ export const content = {
     name: "Francine Roche Kay",
     initials: "FRK",
     headline: "Senior Medical Writer | Oncology, Medical Communications, and Regulatory Documentation",
-    subheadline: "Combining a foundation in chemistry and formulation science with over 15 years of medical writing and communications experience to support clinical, scientific, and regulatory documentation across oncology and early-phase drug development.",
+    subheadline: "Medical writing and clinical development professional with 25+ years of experience across oncology clinical trials, pharmaceutical research, controlled-release drug delivery, and clinical study documentation from Phase 0 through Phase IV.",
     ctas: [
       { label: "View Writing Samples", href: "#portfolio" },
-      { label: "Download Resume", href: "#resume" },
+      { label: "Download Resume", href: "resume/francine-kay-resume.pdf" },
       { label: "Contact", href: "#contact" }
     ]
   },
   links: {
+    email: "frk@francinerochekay.com",
     linkedin: "https://www.linkedin.com/in/francine-kay/",
     website: "https://www.francinerochekay.com/"
   },
   whatIBring: {
     title: "A rare combination of scientific, writing, and leadership experience",
     points: [
-      "Foundation in chemistry with hands-on formulation and drug development experience",
-      "Advanced training in writing and communication (MA in English)",
-      "Extensive experience in oncology-focused medical writing and imaging-related documentation",
-      "Proven ability to develop and review clinical, scientific, technical, and CMC documents",
-      "Leadership experience managing and mentoring medical writing teams while remaining hands-on"
+      "25+ years spanning medical writing, oncology clinical trial documentation, and pharmaceutical research",
+      "Hands-on experience with Phase 0-IV oncology study documents and response criteria including RECIST, Lugano/Cheson, PCWG, iRECIST, and RANO",
+      "Deep familiarity with FDA, ICH, EMA, GxP, SOP, and regulated document workflows",
+      "Former formulation scientist with controlled-release drug delivery, CMC, IND, and clinical supply experience",
+      "Medical writing leader with experience managing, mentoring, training, and developing teams of up to 11 writers"
     ]
   },
   about: {
     paragraphs: [
-      "I am a senior medical writer and medical communications professional with over 20 years of experience across pharmaceutical development, scientific writing, and technical documentation.",
-      "My career began in formulation science, where I led and supported drug development projects from early feasibility through preclinical and Phase I/II supply. This foundation provides practical insight into the full development lifecycle, including CMC considerations and cross-functional collaboration.",
-      "I later transitioned into medical writing and medical communications, where I have authored and reviewed a wide range of documents, including clinical and formulation protocols, imaging charters and manuals, scientific publications, and regulatory documentation. My work has focused primarily on oncology and women’s health, with particular experience supporting imaging-based assessments and clinical response evaluation.",
-      "Over time, I have taken on leadership roles in medical communications, managing and mentoring writers while continuing to contribute directly to document development and review. I am comfortable working in fast-paced environments, supporting multiple projects, and collaborating across scientific, clinical, regulatory, and operational teams."
+      "I am a senior medical writer and clinical development professional with 25+ years of experience across medical writing, oncology clinical trials, pharmaceutical research, and regulated documentation.",
+      "My medical writing work has focused on oncology study documents, independent review charters, site imaging manuals, clinical data transfer plans, physician training packages, compliance reports, publications, and submission-support documentation prepared in alignment with FDA, ICH, EMA, and GxP expectations.",
+      "Before moving into medical writing leadership, I worked in formulation research and controlled-release drug delivery, supporting preclinical through early clinical programs, CMC documentation, IND submissions, SOPs, validation protocols, batch records, and clinical supply preparation.",
+      "I have managed and mentored medical writing teams, developed onboarding and training programs, created templates and document standards, tracked department metrics, supported audits and regulatory meetings, and collaborated across Medical Affairs, Clinical Development, Data Management, Quality Assurance, Regulatory Compliance, Business Development, and Finance."
     ]
   },
   coreExpertise: [
     {
       category: "Medical & Regulatory Writing",
       items: [
-        "Clinical and formulation protocols (preclinical through Phase II)",
-        "Imaging charters and imaging manuals",
-        "CMC documentation for pre-IND and IND submissions",
-        "Scientific publications, posters, and manuscripts"
+        "Independent review charters, site imaging manuals, clinical data transfer plans, and physician training packages",
+        "Compliance reports, notes to file, deviation reports, CAPAs, and audit-support documentation",
+        "Clinical and formulation protocols from preclinical through Phase II",
+        "CMC documentation for pre-IND and IND submissions"
       ]
     },
     {
       category: "Oncology & Clinical Documentation",
       items: [
-        "Oncology-focused documentation and study support",
-        "Imaging-based clinical trial documentation",
-        "Familiarity with clinical response frameworks and endpoints"
+        "Oncology clinical trial documentation across Phase 0-IV programs",
+        "Imaging-based study documentation and independent review workflows",
+        "Response criteria including RECIST, Lugano/Cheson, Hallek, Owen, PCWG2/3, irRC, iRECIST, and RANO"
       ]
     },
     {
       category: "Technical & Scientific Writing",
       items: [
-        "SOPs, validation documentation (IQ/OQ), and technical reports",
-        "Batch records, specifications, and development documentation",
-        "Experimental protocols and feasibility studies"
+        "SOPs, work instructions, validation documentation, IQ/OQ protocols, and technical reports",
+        "Scientific publications, abstracts, poster presentations, and patent draft applications",
+        "AMA, APA, Chicago, MLA, ACS, JAMA, and ICMJE formatting and style conventions"
       ]
     },
     {
       category: "Drug Development & CMC Support",
       items: [
-        "Formulation development from feasibility through early clinical supply",
-        "Process optimization and manufacturing support",
-        "Cross-functional collaboration with R&D, manufacturing, and regulatory teams"
+        "Controlled-release, transvaginal, intrauterine, and implantable drug delivery systems",
+        "Formulation development from feasibility and pre-formulation through early clinical supply",
+        "Clinical manufacturing, process optimization, technology transfer, and vendor/contract lab audits"
       ]
     },
     {
-      category: "Medical Communications & Leadership",
+      category: "Medical Writing Leadership",
       items: [
-        "Medical communications strategy and execution",
-        "Document review, quality control, and consistency",
-        "Team leadership, mentoring, and project oversight"
+        "Management of supervisory and individual contributor medical writing teams",
+        "Training programs, onboarding plans, performance reviews, templates, standards, and workload oversight",
+        "Department KPIs, document metrics, billables, workload analysis, RFP support, and resource planning"
+      ]
+    },
+    {
+      category: "Systems & Tools",
+      items: [
+        "Microsoft Word expert; advanced Excel, PowerPoint, Outlook, Teams, and document formatting",
+        "EDMS platforms including Documentum and MasterControl",
+        "Adobe Acrobat Pro, EndNote, SharePoint, Visio, Access, Windows, and macOS"
       ]
     }
   ],
   careerJourney: [
     {
-      title: "Director, Medical Communications",
-      company: "Placeholder Biotech",
-      years: "2019 – Present",
-      description: "Managed and mentored medical writing teams while maintaining hands-on involvement in document development. Authored and reviewed clinical, scientific, technical, and regulatory documents across oncology and women’s health programs."
+      title: "Director, Medical Writing/Medical Communications",
+      company: "Bioclinica (now Clario)",
+      years: "2020 - 2021",
+      description: "Led medical writing operations and clinical documentation strategy while managing eleven supervisors and medical writers. Oversaw charters, manuals, data transfer plans, physician training packages, compliance reports, document templates, writer training, KPIs, and cross-functional collaboration."
     },
     {
-      title: "Senior Manager / Manager, Medical Communications",
-      company: "Placeholder CRO",
-      years: "2013 – 2019",
-      description: "Developed imaging charters, imaging manuals, and protocol-related documentation for clinical studies. Contributed to CMC sections of pre-IND and IND submissions. Supported multiple concurrent projects in fast-paced pharmaceutical and clinical research environments."
+      title: "Senior Manager, Medical Communications",
+      company: "BioClinica / CoreLab Partners",
+      years: "2010 - 2020",
+      description: "Managed medical communications workflows, document standards, templates, writer training, operational metrics, and sponsor-facing documentation across oncology imaging studies and clinical trial programs."
     },
     {
-      title: "Senior Medical Writer",
-      company: "Placeholder Pharma",
-      years: "2008 – 2013",
-      description: "Authored and reviewed imaging charters, protocols, publications, and technical documents. Supported oncology studies and imaging review programs."
+      title: "Manager / Senior Medical Writer / Medical Writer",
+      company: "RadPharm / CoreLab Partners",
+      years: "2006 - 2010",
+      description: "Authored independent review charters and oncology imaging documentation, improved charter standards, developed writer training programs, created internal tracking tools, and supported publications formatted to JAMA, ICMJE, and AMA conventions."
     },
     {
-      title: "Formulation Scientist / Lead Scientist",
-      company: "Placeholder Pharmaceuticals",
-      years: "1998 – 2008",
-      description: "Led formulation development projects from feasibility and pre-formulation through process optimization. Supported manufacture of drug product for preclinical and early-phase clinical studies. Prepared technical and development documentation supporting early-stage programs."
+      title: "Scientific Documentation & Formulation Roles",
+      company: "Barr Labs, Barr Research, Enhance Pharmaceuticals, FEI Technologies",
+      years: "1997 - 2006",
+      description: "Prepared CMC sections for pre-IND and IND submissions, authored SOPs and controlled documentation, developed preclinical and early clinical supplies for controlled-release drug delivery devices, and contributed to publications, posters, and patents."
+    },
+    {
+      title: "Assistant Scientist, Liquids and Semi-Solids",
+      company: "Whitehall-Robins Healthcare",
+      years: "1993 - 1997",
+      description: "Supported pharmaceutical product development for liquid and semi-solid consumer healthcare products, including formulation research, method development, technical documentation, and cGMP-aligned quality practices."
     }
   ],
   therapeuticAreas: {
     oncology: {
-      description: "Primary area of focus, including support for imaging-related documentation and clinical response assessment frameworks used in oncology trials.",
+      description: "Primary area of medical writing focus, including oncology imaging documentation, independent review workflows, and clinical response assessment frameworks used across Phase 0-IV clinical trials.",
       detailedExpertise: [
         "RECIST 1.1 (Response Evaluation Criteria in Solid Tumors)",
         "iRECIST (Immune-related Response Evaluation Criteria)",
-        "Lugano Classification for Lymphoma",
-        "PCWG3 (Prostate Cancer Working Group)",
+        "Lugano / Cheson lymphoma response criteria",
+        "PCWG2 and PCWG3 (Prostate Cancer Working Group)",
         "RANO (Response Assessment in Neuro-Oncology)",
-        "Choi Criteria"
+        "Hallek, Owen, and irRC criteria"
       ]
     },
     womensHealth: {
-      description: "Experience supporting programs related to contraception, endometriosis, PMDD, and incontinence."
+      description: "Experience supporting controlled-release drug delivery programs and documentation related to contraception, urinary incontinence, PMDD, and other women's health applications."
     }
   },
   patents: [
@@ -155,7 +170,7 @@ export const content = {
     },
     {
       title: "Device and Method for Treating Urinary Incontinence in Females",
-      number: "EP 1 278 494 B1 / WO 2001/070154",
+      number: "WO 2001/070154",
       issued: "Issued Mar 1, 2001",
       summary: "International patent family covering local controlled-release oxybutynin delivery for urinary incontinence.",
       url: "https://patents.google.com/patent/WO2001070154A1/en"
@@ -163,76 +178,78 @@ export const content = {
   ],
   samples: [
     {
-      title: "Phase II Oncology Imaging Charter",
+      title: "Independent Review Charter",
       category: "Oncology",
-      description: "Independent Review Charter for a multicenter Phase II solid tumor trial, detailing RECIST 1.1 methodology and reader workflows.",
-      tags: ["RECIST 1.1", "Imaging", "Phase II"],
+      description: "Representative oncology imaging charter documenting study design, reader workflows, response criteria, image review process, and operational requirements.",
+      tags: ["RECIST", "Imaging", "Charter"],
       confidential: true
     },
     {
-      title: "Phase I Dose Escalation Protocol",
-      category: "Protocols",
-      description: "First-in-human clinical protocol for a novel targeted therapy in advanced solid tumors.",
-      tags: ["Clinical Protocol", "Phase I", "Dose Escalation"],
+      title: "Site Imaging Manual",
+      category: "Clinical Documentation",
+      description: "Representative site manual outlining imaging acquisition, submission, query resolution, and trial documentation expectations.",
+      tags: ["Site Manual", "Imaging", "Operations"],
+      confidential: true
+    },
+    {
+      title: "Clinical Data Transfer Plan",
+      category: "Clinical Documentation",
+      description: "Representative data transfer plan supporting clinical imaging data flow, review readiness, and cross-functional documentation alignment.",
+      tags: ["Data Transfer", "EDMS", "Clinical Ops"],
       confidential: true
     },
     {
       title: "Module 3 (Quality) IND Section",
       category: "Regulatory/CMC",
-      description: "Drug product formulation and manufacturing process descriptions for an early-stage targeted oncology asset.",
+      description: "Drug product formulation and manufacturing process descriptions for early-stage controlled-release and oncology-related assets.",
       tags: ["IND", "CMC", "Module 3"],
       confidential: true
     },
     {
-      title: "Formulation Feasibility Report",
-      category: "Technical Writing",
-      description: "Comprehensive technical report evaluating excipient compatibility and early stability profiles.",
-      tags: ["Preclinical", "Formulation", "Technical Report"],
-      confidential: true
-    },
-    {
-      title: "ASCO Abstract & Scientific Poster",
+      title: "Scientific Abstract & Poster Support",
       category: "Publications",
-      description: "Drafted abstract and designed scientific poster presenting interim response data from a Phase Ib trial.",
-      tags: ["ASCO", "Abstract", "Poster"],
+      description: "Scientific publication support including abstract development, poster preparation, journal article formatting, and citation/style compliance.",
+      tags: ["Abstract", "Poster", "AMA"],
       confidential: false
     }
   ],
   capabilities: [
     "Clinical and scientific document development",
-    "Oncology and imaging-related writing",
-    "Early development and formulation documentation",
-    "CMC support writing",
-    "Publication support",
-    "Quality review and editorial review",
-    "Medical communications leadership",
-    "Cross-functional collaboration with scientific, clinical, regulatory, and operational stakeholders"
+    "Oncology and imaging-related medical writing",
+    "Independent review charters and site imaging manuals",
+    "Clinical data transfer plans and physician training packages",
+    "Compliance reports, CAPAs, notes to file, and audit support",
+    "Early development, formulation, and CMC documentation",
+    "Publication, abstract, poster, and journal submission support",
+    "EDMS workflows, document templates, QC, and editorial review",
+    "Medical writing leadership, training, metrics, and resource planning",
+    "Cross-functional collaboration with Medical Affairs, Clinical Development, Data Management, QA, Regulatory Compliance, Finance, and Business Development"
   ],
   credentials: {
     education: [
-      "BS in Chemistry — The College of New Jersey",
-      "MA in English — The College of New Jersey"
+      "MA in English - The College of New Jersey",
+      "BS in Chemistry - The College of New Jersey"
     ],
     certifications: [
-      "AMWA Core Curriculum Certification (Placeholder)",
-      "Regulatory Affairs Professionals Society (RAPS) Member (Placeholder)"
+      "Drug Information Association (DIA)",
+      "American Medical Writers Association (AMWA)",
+      "Controlled Release Society (CRS)",
+      "American Association of Pharmaceutical Scientists (AAPS)",
+      "American Chemical Society (ACS)",
+      "Modern Language Association (MLA)"
     ]
   },
-  testimonials: [
-    {
-      quote: "Francine brings an incredibly rare mix of scientific depth and editorial precision. She doesn't just format documents; she understands the underlying chemistry and clinical strategy.",
-      author: "Chief Medical Officer",
-      company: "Biotech Client"
-    },
-    {
-      quote: "Her work on our complex oncology imaging charters was flawless. She managed multiple stakeholders effortlessly and delivered exactly what we needed for the regulatory submission.",
-      author: "Director of Clinical Operations",
-      company: "Global CRO"
-    },
-    {
-      quote: "An exceptional leader who elevates the quality of every writer on her team. She leads by example, jumping in to handle the most complex regulatory documents herself when needed.",
-      author: "VP of Medical Communications",
-      company: "Pharmaceutical Partner"
-    }
-  ]
+  scholarship: {
+    publications: [
+      "Roche, F. \"The Battle of the Books: An Attack on Nationalism.\" Medieval Forum, Vol. VI, January 2007.",
+      "Roche, F. \"Gwrthryfel: Welsh Rebellion in 1 Henry IV and in British History.\" The College of New Jersey Journal of Student Scholarship, Vol. VIII, April 2006.",
+      "Schröder A., Levin R.M., Kogan B.A., Das A.K., Kay F., Mahashabde A. \"Absorption of Oxybutynin from Vaginal Inserts: Drug Blood Levels and the Response of the Rabbit Bladder.\" Urology, December 2000; 56(6): 1063-1067."
+    ],
+    presentations: [
+      "\"Single Dose Pharmacokinetic Comparison of a Novel Formulation of Fluoxetine and Norfluoxetine Following Oral and Vaginal Administration.\" Controlled Release Society, July 2003.",
+      "\"Development of a Vaginal Anesthetic Ring Delivery System.\" 6th US-Japan Symposium on Drug Delivery Systems, December 2001.",
+      "\"The Effect of Oxybutynin Vaginal Implants on the Rabbit Urinary Bladder.\" American Urological Association, April 2000.",
+      "\"Preformulation Studies on the Development of Oxybutynin Vaginal Ring Devices.\" American Association of Pharmaceutical Scientists, November 1998."
+    ]
+  }
 };
