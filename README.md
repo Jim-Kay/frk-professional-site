@@ -79,6 +79,14 @@ Deployments run automatically on pushes to `main`. The workflow:
 3. Uploads `dist/public` as the GitHub Pages artifact
 4. Publishes the site to GitHub Pages
 
+## Automation Runbooks
+
+Periodic maintenance automation can use:
+
+```text
+docs/portfolio-maintenance-loop.md
+```
+
 ## Content Updates
 
 Most page copy and structured portfolio content lives in:
