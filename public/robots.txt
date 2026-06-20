@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jim-kay.github.io/frk-professional-site/sitemap.xml

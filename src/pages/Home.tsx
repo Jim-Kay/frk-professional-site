@@ -118,7 +118,7 @@ export default function Home() {
               transition={{ duration: 0.5 }}
               className="w-36 h-36 md:w-44 md:h-44 mx-auto mb-8 rounded-full border-4 border-background shadow-xl overflow-hidden"
             >
-              <img src={headshotImg} alt="Professional headshot" className="w-full h-full object-cover object-center" />
+              <img src={headshotImg} alt="Francine Roche Kay professional headshot" className="w-full h-full object-cover object-center" />
             </motion.div>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
