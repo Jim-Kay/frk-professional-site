@@ -4,6 +4,7 @@ export const content = {
     initials: "FRK",
     headline: "Senior Medical Writer | Oncology, Medical Communications, and Clinical Documentation",
     subheadline: "Medical writing and clinical development professional with 25+ years of experience across oncology clinical trials, pharmaceutical research, controlled-release drug delivery, and clinical study documentation from Phase 0 through Phase IV.",
+    availability: "Available for senior medical writing opportunities",
     ctas: [
       { label: "View Writing Samples", href: "#portfolio" },
       { label: "Download Resume", href: "resume/francine-kay-resume.pdf" },

@@ -128,6 +128,19 @@ export default function Home() {
             >
               {content.hero.name}
             </motion.p>
+            <motion.a
+              href="#contact"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.08 }}
+              className="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/35 bg-accent/10 px-4 py-2 text-sm font-medium text-primary shadow-sm transition-colors hover:border-accent/60 hover:bg-accent/15"
+            >
+              <span className="relative flex h-2.5 w-2.5" aria-hidden="true">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-40 motion-safe:animate-ping"></span>
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-accent"></span>
+              </span>
+              <span>{content.hero.availability}</span>
+            </motion.a>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
