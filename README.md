@@ -1,6 +1,6 @@
 # FRK Professional Site
 
-Portfolio website for Francine Roche Kay, a senior medical writer focused on oncology, medical communications, regulatory documentation, and scientific writing.
+Portfolio website for Francine Roche Kay, a senior medical writer focused on oncology, medical communications, clinical documentation, and scientific writing.
 
 Live site: https://jim-kay.github.io/frk-professional-site/
 

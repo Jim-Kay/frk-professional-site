@@ -2,7 +2,7 @@ export const content = {
   hero: {
     name: "Francine Roche Kay",
     initials: "FRK",
-    headline: "Senior Medical Writer | Oncology, Medical Communications, and Regulatory Documentation",
+    headline: "Senior Medical Writer | Oncology, Medical Communications, and Clinical Documentation",
     subheadline: "Medical writing and clinical development professional with 25+ years of experience across oncology clinical trials, pharmaceutical research, controlled-release drug delivery, and clinical study documentation from Phase 0 through Phase IV.",
     ctas: [
       { label: "View Writing Samples", href: "#portfolio" },
@@ -35,7 +35,7 @@ export const content = {
   },
   coreExpertise: [
     {
-      category: "Medical & Regulatory Writing",
+      category: "Medical Writing & Clinical Documentation",
       items: [
         "Independent review charters, site imaging manuals, clinical data transfer plans, and physician training packages",
         "Compliance reports, notes to file, deviation reports, CAPAs, and audit-support documentation",
